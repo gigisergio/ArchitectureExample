@@ -18,5 +18,3 @@ class SportsApiRepository {
         return apiClient.getEntitiyList(forResource: resource)
     }
 }
-
-

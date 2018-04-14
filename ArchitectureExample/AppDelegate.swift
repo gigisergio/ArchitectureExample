@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         
-//        SuperHeroListRouter(window: window!).start()
+        SportsListRouter(window: window!).start()
         
         return true
     }

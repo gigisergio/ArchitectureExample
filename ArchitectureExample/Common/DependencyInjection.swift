@@ -10,19 +10,11 @@ final class DependencyInjection {
     }
     
     private func setup() {
-//        container.register(SuperHeroApiRepository.self) {_ in
-//            SuperHeroApiRepository(apiClient: ApiClient.shared)
-//        }
-//        container.register(GetSuperHeroListUseCase.self) {r in
-//            GetSuperHeroListUseCase(repository: r.resolve(SuperHeroApiRepository.self)!)
-//        }
-//        container.register(SuperHeroListViewModel.self) {r, router in
-//            SuperHeroListViewModel(router: router as SuperHeroListRouterType,
-//                                   getSuperHerosUseCase: r.resolve(GetSuperHeroListUseCase.self)!)
-//        }
-//        container.register(SuperHeroViewModel.self) {r, router, superHero in
-//            SuperHeroViewModel(router: router as SuperHeroRouterType,
-//                               superHero: superHero)
-//        }
+        container.register(SportsApiRepository.self) {_ in
+            SportsApiRepository(apiClient: ApiClient.shared)
+        }
+        container.register(GetSportsListUseCase.self) {r in
+            GetSportsListUseCase(repository: r.resolve(SportsApiRepository.self)!)
+        }
     }
 }

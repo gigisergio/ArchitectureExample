@@ -5,7 +5,7 @@ extension UIImageView {
 	func setImage(withURL url: URL, completion: ((UIImage?)->Void)? = nil) {
         af_setImage(
             withURL: url,
-            placeholderImage: nil,
+            placeholderImage: #imageLiteral(resourceName: "person-placeholder.jpg"),
             filter: nil,
             progress: nil,
             progressQueue: DispatchQueue.main,

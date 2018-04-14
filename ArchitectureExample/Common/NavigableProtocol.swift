@@ -1,3 +1,3 @@
-protocol DetailNavigable {
-    func navigateTo(superHero: SportEntity)
+protocol PlayerDetailNavigable {
+    func navigateTo(player: PlayerEntity)
 }
