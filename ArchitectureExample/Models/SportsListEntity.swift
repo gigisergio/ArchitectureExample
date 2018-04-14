@@ -1,10 +1,5 @@
 import Foundation
 
-struct SportsListEntity {
+struct SportsListEntity: Decodable {
     var items: [SportEntity] = []
-}
-
-extension SportsListEntity: JSONDecodable {
-    init(dictionary: JSONDictionary) throws {
-    }
 }

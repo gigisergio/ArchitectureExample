@@ -14,20 +14,20 @@ class ApiClient: ApiClientType {
     // MARK: - Methods
     
     // GET
-    func getEntity<T:JSONDecodable>(forResource resource: ResourceType) -> Observable<T?> {
+    func getEntity<T: Decodable>(forResource resource: ResourceType) -> Observable<T?> {
         return request(forResource: resource, method: .get)
             .map { data in
-                guard let entity: T = decode(data) else {
+                guard let entity: T = try? JSONDecoder().decode(T.self, from: data) else {
                     return nil
                 }
                 return entity
         }
     }
     
-    func getEntitiyList<T:JSONDecodable>(forResource resource: ResourceType) -> Observable<[T]>{
+    func getEntitiyList<T:Decodable>(forResource resource: ResourceType) -> Observable<[T]>{
         return request(forResource: resource, method: .get)
             .map { data in
-                guard let entities: [T] = decode(data) else {
+                guard let entities: [T] = try? JSONDecoder().decode([T].self, from: data) else {
                     return []
                 }
                 return entities

@@ -9,13 +9,13 @@ class SportsApiRepository {
         self.apiClient = apiClient
     }
     
-    public func getSportList() -> Observable<SportsListEntity?> {
+    public func getSportList() -> Observable<[SportEntity]> {
         
         let url = baseURL.appendingPathComponent(ApiPaths.sports.rawValue)
         
         let resource = Resource(url: url, parameters: nil)
         
-        return apiClient.getEntity(forResource: resource)
+        return apiClient.getEntitiyList(forResource: resource)
     }
 }
 

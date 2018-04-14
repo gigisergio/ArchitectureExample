@@ -9,7 +9,7 @@ class GetSportsListUseCase {
         self.repository = repository
     }
     
-    func execute() -> Observable<SportsListEntity?> {
+    func execute() -> Observable<[SportEntity]> {
         return repository.getSportList()
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)

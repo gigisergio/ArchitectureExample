@@ -12,7 +12,6 @@
 		6426779A2081EE73000664F2 /* NavigableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677972081EE73000664F2 /* NavigableProtocol.swift */; };
 		6426779E2081EE82000664F2 /* UIView+Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6426779B2081EE82000664F2 /* UIView+Stylable.swift */; };
 		6426779F2081EE82000664F2 /* UIImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6426779C2081EE82000664F2 /* UIImageView+setImage.swift */; };
-		642677A02081EE82000664F2 /* Array+JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6426779D2081EE82000664F2 /* Array+JSONDecodable.swift */; };
 		642677A42081EE8D000664F2 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677A12081EE8D000664F2 /* StyleConstants.swift */; };
 		642677A52081EE8D000664F2 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677A22081EE8D000664F2 /* Stylable.swift */; };
 		642677A62081EE8D000664F2 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677A32081EE8D000664F2 /* ViewStyle.swift */; };
@@ -23,7 +22,6 @@
 		642677BB2081F034000664F2 /* SportsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BA2081F034000664F2 /* SportsApiRepository.swift */; };
 		642677C22081F042000664F2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BC2081F041000664F2 /* ApiClient.swift */; };
 		642677C32081F042000664F2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BD2081F041000664F2 /* ApiError.swift */; };
-		642677C42081F042000664F2 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BE2081F041000664F2 /* JSONDecodable.swift */; };
 		642677C52081F042000664F2 /* JSONDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BF2081F041000664F2 /* JSONDecodingError.swift */; };
 		642677C62081F042000664F2 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677C02081F041000664F2 /* Resource.swift */; };
 		642677C72081F042000664F2 /* ApiPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677C12081F041000664F2 /* ApiPaths.swift */; };
@@ -46,7 +44,6 @@
 		642677972081EE73000664F2 /* NavigableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigableProtocol.swift; sourceTree = "<group>"; };
 		6426779B2081EE82000664F2 /* UIView+Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Stylable.swift"; sourceTree = "<group>"; };
 		6426779C2081EE82000664F2 /* UIImageView+setImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+setImage.swift"; sourceTree = "<group>"; };
-		6426779D2081EE82000664F2 /* Array+JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+JSONDecodable.swift"; sourceTree = "<group>"; };
 		642677A12081EE8D000664F2 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		642677A22081EE8D000664F2 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 		642677A32081EE8D000664F2 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
@@ -57,7 +54,6 @@
 		642677BA2081F034000664F2 /* SportsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsApiRepository.swift; sourceTree = "<group>"; };
 		642677BC2081F041000664F2 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		642677BD2081F041000664F2 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
-		642677BE2081F041000664F2 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		642677BF2081F041000664F2 /* JSONDecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodingError.swift; sourceTree = "<group>"; };
 		642677C02081F041000664F2 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		642677C12081F041000664F2 /* ApiPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPaths.swift; sourceTree = "<group>"; };
@@ -121,7 +117,6 @@
 		642677942081EDB9000664F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6426779D2081EE82000664F2 /* Array+JSONDecodable.swift */,
 				6426779C2081EE82000664F2 /* UIImageView+setImage.swift */,
 				6426779B2081EE82000664F2 /* UIView+Stylable.swift */,
 			);
@@ -159,7 +154,6 @@
 			children = (
 				642677BC2081F041000664F2 /* ApiClient.swift */,
 				642677BD2081F041000664F2 /* ApiError.swift */,
-				642677BE2081F041000664F2 /* JSONDecodable.swift */,
 				642677BF2081F041000664F2 /* JSONDecodingError.swift */,
 				642677C02081F041000664F2 /* Resource.swift */,
 			);
@@ -170,8 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				642677C82081F057000664F2 /* ApiClient */,
-				642677CD2081F0A4000664F2 /* SportEntity.swift */,
 				642677D12081F25A000664F2 /* SportsListEntity.swift */,
+				642677CD2081F0A4000664F2 /* SportEntity.swift */,
 				642677CF2081F0AE000664F2 /* PlayerEntity.swift */,
 			);
 			path = Models;
@@ -413,12 +407,10 @@
 				642677CE2081F0A4000664F2 /* SportEntity.swift in Sources */,
 				642677CB2081F065000664F2 /* ResourceType.swift in Sources */,
 				642677C52081F042000664F2 /* JSONDecodingError.swift in Sources */,
-				642677C42081F042000664F2 /* JSONDecodable.swift in Sources */,
 				642677AD2081EEDD000664F2 /* ViewModel.swift in Sources */,
 				6426779F2081EE82000664F2 /* UIImageView+setImage.swift in Sources */,
 				642677C62081F042000664F2 /* Resource.swift in Sources */,
 				642677C72081F042000664F2 /* ApiPaths.swift in Sources */,
-				642677A02081EE82000664F2 /* Array+JSONDecodable.swift in Sources */,
 				642677A42081EE8D000664F2 /* StyleConstants.swift in Sources */,
 				642677BB2081F034000664F2 /* SportsApiRepository.swift in Sources */,
 				642677D22081F25A000664F2 /* SportsListEntity.swift in Sources */,
