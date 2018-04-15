@@ -1,31 +1,30 @@
 import RxSwift
 
 protocol PlayerDetailViewModelType: ViewModelType {
-
-    // var xxxObservable: Observable<type> {get}
-
+    var image: Observable<String?> {get}
 }
 
 class PlayerDetailViewModel: ViewModel,  PlayerDetailViewModelType {
-
+    
     // MARK: - Input
-    //private var xxxVariable: Variable<type> = Variable()
+    private var imageVariable: Variable<String?> = Variable(nil)
     
     // MARK: - Output
-    //lazy var xxxObservable: Observable<type> = self.xxxVariable.asObservable()
+    lazy var image: Observable<String?> = self.imageVariable.asObservable()
     
     // MARK: - Private
     private let bag = DisposeBag()
     private let router: PlayerDetailRouterType
-
+    
     // MARK: - Init
     
     init(router: PlayerDetailRouterType, player: PlayerEntity) {
-
+        
         self.router = router
+        self.imageVariable.value = player.image
         super.init(router: router)
     }
-
+    
 }
 
 

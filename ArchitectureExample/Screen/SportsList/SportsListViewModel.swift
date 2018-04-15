@@ -20,7 +20,6 @@ class SportsListViewModel: ViewModel,  SportsListViewModelType {
     private let useCase: GetSportsListUseCase
     
     // MARK: - Init
-    
     init(router: SportsListRouterType,
          useCase: GetSportsListUseCase) {
         self.router = router
@@ -29,7 +28,6 @@ class SportsListViewModel: ViewModel,  SportsListViewModelType {
     }
     
     // MARK: - Setup
-    
     override func reload() {
         super.reload()
         

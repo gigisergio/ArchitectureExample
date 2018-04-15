@@ -6,7 +6,6 @@ import RxDataSources
 class SportsListViewController: ViewController {
     
     // MARK: - Outlets
-    
     @IBOutlet weak var tableView: UITableView!{
         didSet {
             tableView.register(UINib.init(nibName: PlayerTableViewCell.cellId, bundle: nil),
@@ -19,7 +18,6 @@ class SportsListViewController: ViewController {
     private let viewModel: SportsListViewModelType
     
     // MARK: - Init
-    
     init(viewModel: SportsListViewModelType) {
         self.viewModel = viewModel
         super.init(viewModel: viewModel)
@@ -29,33 +27,20 @@ class SportsListViewController: ViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {
-        print("deinit SportsListViewController")
-    }
-    
     // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupRx()
         setupViews()
-        applyStyle()
         viewModel.reload()
     }
     
     // MARK: Setup
-    
     private func setupViews() {
         title = "Best Players"
     }
     
-    private func applyStyle() {
-        
-    }
-    
     private func setupRx() {
-        
         let dataSource = RxTableViewSectionedReloadDataSource<SportSection>(configureCell: {
             [weak self] dataSource, tableView, indexPath, cell  in
             let defaultCell = UITableViewCell(style: .default, reuseIdentifier: "cell")

@@ -22,14 +22,12 @@
 		642677BB2081F034000664F2 /* SportsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BA2081F034000664F2 /* SportsApiRepository.swift */; };
 		642677C22081F042000664F2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BC2081F041000664F2 /* ApiClient.swift */; };
 		642677C32081F042000664F2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BD2081F041000664F2 /* ApiError.swift */; };
-		642677C52081F042000664F2 /* JSONDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677BF2081F041000664F2 /* JSONDecodingError.swift */; };
 		642677C62081F042000664F2 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677C02081F041000664F2 /* Resource.swift */; };
 		642677C72081F042000664F2 /* ApiPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677C12081F041000664F2 /* ApiPaths.swift */; };
 		642677CB2081F065000664F2 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677C92081F065000664F2 /* ResourceType.swift */; };
 		642677CC2081F065000664F2 /* ApiClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677CA2081F065000664F2 /* ApiClientType.swift */; };
 		642677CE2081F0A4000664F2 /* SportEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677CD2081F0A4000664F2 /* SportEntity.swift */; };
 		642677D02081F0AE000664F2 /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677CF2081F0AE000664F2 /* PlayerEntity.swift */; };
-		642677D22081F25A000664F2 /* SportsListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677D12081F25A000664F2 /* SportsListEntity.swift */; };
 		642677D8208244CA000664F2 /* SportsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677D5208244CA000664F2 /* SportsListRouter.swift */; };
 		642677DA208244CA000664F2 /* SportsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642677D7208244CA000664F2 /* SportsListViewModel.swift */; };
 		642677DC208244F9000664F2 /* SportsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642677DB208244F9000664F2 /* SportsListViewController.xib */; };
@@ -65,14 +63,12 @@
 		642677BA2081F034000664F2 /* SportsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsApiRepository.swift; sourceTree = "<group>"; };
 		642677BC2081F041000664F2 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		642677BD2081F041000664F2 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
-		642677BF2081F041000664F2 /* JSONDecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodingError.swift; sourceTree = "<group>"; };
 		642677C02081F041000664F2 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		642677C12081F041000664F2 /* ApiPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiPaths.swift; sourceTree = "<group>"; };
 		642677C92081F065000664F2 /* ResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceType.swift; sourceTree = "<group>"; };
 		642677CA2081F065000664F2 /* ApiClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientType.swift; sourceTree = "<group>"; };
 		642677CD2081F0A4000664F2 /* SportEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEntity.swift; sourceTree = "<group>"; };
 		642677CF2081F0AE000664F2 /* PlayerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
-		642677D12081F25A000664F2 /* SportsListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListEntity.swift; sourceTree = "<group>"; };
 		642677D5208244CA000664F2 /* SportsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListRouter.swift; sourceTree = "<group>"; };
 		642677D6208244CA000664F2 /* SportsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewController.swift; sourceTree = "<group>"; };
 		642677D7208244CA000664F2 /* SportsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewModel.swift; sourceTree = "<group>"; };
@@ -176,7 +172,6 @@
 			children = (
 				642677BC2081F041000664F2 /* ApiClient.swift */,
 				642677BD2081F041000664F2 /* ApiError.swift */,
-				642677BF2081F041000664F2 /* JSONDecodingError.swift */,
 				642677C02081F041000664F2 /* Resource.swift */,
 			);
 			path = Client;
@@ -186,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				642677C82081F057000664F2 /* ApiClient */,
-				642677D12081F25A000664F2 /* SportsListEntity.swift */,
 				642677CD2081F0A4000664F2 /* SportEntity.swift */,
 				642677CF2081F0AE000664F2 /* PlayerEntity.swift */,
 			);
@@ -447,14 +441,12 @@
 				642677E82082CABB000664F2 /* PlayerDetailViewController.swift in Sources */,
 				642677CE2081F0A4000664F2 /* SportEntity.swift in Sources */,
 				642677CB2081F065000664F2 /* ResourceType.swift in Sources */,
-				642677C52081F042000664F2 /* JSONDecodingError.swift in Sources */,
 				642677AD2081EEDD000664F2 /* ViewModel.swift in Sources */,
 				6426779F2081EE82000664F2 /* UIImageView+setImage.swift in Sources */,
 				642677C62081F042000664F2 /* Resource.swift in Sources */,
 				642677C72081F042000664F2 /* ApiPaths.swift in Sources */,
 				642677A42081EE8D000664F2 /* StyleConstants.swift in Sources */,
 				642677BB2081F034000664F2 /* SportsApiRepository.swift in Sources */,
-				642677D22081F25A000664F2 /* SportsListEntity.swift in Sources */,
 				642677D8208244CA000664F2 /* SportsListRouter.swift in Sources */,
 				642677CC2081F065000664F2 /* ApiClientType.swift in Sources */,
 				643277AF2081E60B000BEB12 /* AppDelegate.swift in Sources */,

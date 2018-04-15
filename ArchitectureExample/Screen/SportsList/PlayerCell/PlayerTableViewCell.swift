@@ -4,8 +4,6 @@ import RxSwift
 class PlayerTableViewCell: UITableViewCell {
     
     static let cellId = String(describing: PlayerTableViewCell.self)
-    //    static let height:CGFloat = 240
-    //    static let width:CGFloat = 140.0
     
     // MARK: - Outlets
     @IBOutlet weak var photoImageView: UIImageView!
